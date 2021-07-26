@@ -2,35 +2,52 @@
 <html lang="en">
     <head>
             <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
             <title>My CV</title>
     </head>
     <body>
-        <div>
-                <header>
-                    <h1>Bagaev Yuri</h1>
-                        <img src="gn2lpu65KOs.jpg" width="200" alt="My photo">
-                            <p><strong>Tel: +7 (999) 612 80 65</strong></p>
-                            <p><strong>Email: electicsea94rus@gmail.com</strong></p>
-                </header>
+        <div class="main_block">
+                <div class="main_img">
+                    <img src="gn2lpu65KOs.jpg" width="200" alt="My photo">
+                    <h4 class="contacts">Contacts:</h4>
+                    <ul>
+                        <li><strong>+7 (999) 612 80 65</strong></li>
+                    </ul>
+                    <ul>
+                        <li><strong>electicsea94rus@gmail.com</strong></li>
+                    </ul>
+                </div>
 
-                <main>
+
+                <main class="main_content">
+                    <header>
+                        <h1 class="main_header">Bagaev Yuri</h1>
+                    </header>
                     <section>
                         <h3>About me:</h3>
-                        <p>My main purpose  - to became a  frontend - developer and benefit society :) I worked(and work) in many other places, but sure, that <b>my vocation is programming.</b></p>
-                        <p>I am a diligent and hardworking.</p>
+                        <p>My main purpose  - to became a  frontend - developer and benefit society :)</p>
+                        <p>I worked(and work) in many other places, but sure, that <b>my vocation is programming.</b></p>
+                        <p>I am a diligent and hardworking!</p>
                     </section>
 
                     <section>
                         <h3>My skills and development:</h3>
-                        <p>My skills in development: <em>Html, CSS, JavaScript, React, Git</em></p>
+                        <p>My skills in development:</p>
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h3>Example of code:</h3>
                         <p>This is example of my code. This function takes a binary number, and returns number in decimal system:</p>
                         <details>
+                        <summary>Open code</summary>
                         <pre>
-                            `let binaryArrayToNumber = arr => {
+                            let binaryArrayToNumber = arr => {
 
                                 let res = 0;
                                 
@@ -50,7 +67,7 @@
                                 
                                 return res
                                 
-                                };`
+                                };
                         </pre>
                     </details>
                     </section>
@@ -66,11 +83,13 @@
                         <p>My english skills is a b1. This is a not big skill, but i study english every day.</p>
                     </section>
                 </main>
-                <footer>
-                    <a href="https://github.com/Yuri0494">My Github</a>
-                    <img src="rs_school_js.svg" width="50" alt="RS School">
-                    <mark><a href="https://rs.school/js/">We wait you here!</a></mark>
-                </footer>
         </div>
+        <footer>
+            <div>
+                <a href="https://github.com/Yuri0494">My Github</a>
+                <img src="rs_school_js.svg" width="50" alt="RS School">
+                <a href="https://rs.school/js/">We wait you here!</a>
+            </div>  
+        </footer>
     </body>
 </html>
