@@ -16,6 +16,10 @@
     background-color: rgb(246, 253, 253);
 }
 
+.main_img img {
+    border-radius: 30px;
+}
+
 .main_content {
     text-align: center;
     padding: 5px;
