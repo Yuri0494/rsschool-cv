@@ -20,9 +20,8 @@ html {
 
 
 .photo {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    border-radius: 40%;
 }
 
 .left_article {
