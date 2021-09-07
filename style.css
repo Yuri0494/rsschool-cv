@@ -1,67 +1,94 @@
-.body {
-   font-family: Courier, monospace; 
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
 }
 
-.main_block {
+.central__block {
     margin: 0 auto;
+    max-width: 800px;
+    min-width: 300px;
+    box-shadow: .5rem .2rem 1rem black;
+    margin-bottom: 5rem;
+    color: white;
+    font-size: .7rem;
+
+}
+
+.content {
     display: flex;
-    width: 50%;
-
 }
 
-.main_img {
-    color:black;
-    margin-right: 20px;
-    text-align: center;
-    background-color: rgb(246, 253, 253);
-}
 
-.main_content {
-    text-align: center;
-    padding: 5px;
-    background-color: rgb(246, 253, 253);
-}
-
-.main_header {
-    text-align: center;
-}
-
-.contacts {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-footer div {
+.photo {
+    width: 80%;
     margin: 0 auto;
-    width: 50%;
-    margin-top: 20px;
-    height: 50px;
-    background-color: rgb(246, 253, 253);
+    border-radius: 40%;
+}
+
+.left_article {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+    width: 25%;
+    background-color: #4e5363;
+    text-align: left;
+
 }
 
-footer div a {
-    color:black;
-}
-
-li {
-    list-style-type: none;
-    padding-bottom: 5px;
-}
-
-ul {
+.left_article ul {
     padding: 0;
+    list-style-type: none;
+
 }
 
-details {
-    text-align: left;;
+.left_article h1 {
+    color: #ffedcd;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
 
-details[open] {
-    background-color: white;
+.left_article h3 {
+    color: #ffedcd;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.position {
+    margin: 0;
+    position: relative;
+}
+
+.position::after {
+    position: absolute;
+    top:2rem;
+    left: -0px;
+    content: "";
+    width: 115%;
+    border-bottom: .2rem solid #ffedcd;
+}
+
+.right_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    width: 75%;
+    color: black;
+}
+
+section {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.section_header {
+    display: inline-block;
+    padding: 1rem;
+    background-color: #ffedcd;
+    width: 80%;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
