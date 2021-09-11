@@ -1,12 +1,11 @@
 html {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    overflow-x: hidden;
+    font-size: 20px;
 }
 
 .central__block {
     margin: 0 auto;
-    width: 800px;
+    max-width: 1200px;
     min-width: 300px;
     box-shadow: .5rem .2rem 1rem black;
     margin-bottom: 5rem;
@@ -17,6 +16,7 @@ html {
 
 .content {
     display: flex;
+    line-height: 1rem;
 }
 
 
@@ -123,10 +123,16 @@ section {
 }
 
 @media (max-width: 640px) {
+
+    html {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
     
     .content {
         display: block;
         margin: 0 auto;
+        line-height: 3.5rem;
     }
 
     .photo {
