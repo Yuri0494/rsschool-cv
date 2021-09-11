@@ -112,6 +112,11 @@ section {
     text-align: center;
 }
 
+pre {
+    margin: 0;
+    text-align: left;
+}
+
 .footer {
     font-size: 2rem;
     margin-top: .1rem;
@@ -220,6 +225,12 @@ section {
         margin-top: 1rem;
         margin-top: 1rem;
         width:80%;
+    }
+
+    pre {
+        margin: 0;
+        text-align: left;
+        font-size: 1.5rem;
     }
 
     .footer p {
