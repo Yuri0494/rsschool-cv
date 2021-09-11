@@ -1,11 +1,12 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
+    overflow-x: hidden;
 }
 
 .central__block {
     margin: 0 auto;
-    max-width: 800px;
+    width: 800px;
     min-width: 300px;
     box-shadow: .5rem .2rem 1rem black;
     margin-bottom: 5rem;
