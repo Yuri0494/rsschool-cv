@@ -3,8 +3,12 @@ html {
     font-size: 20px;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .central__block {
-    margin: 0 auto;
     max-width: 1320px;
     min-width: 300px;
     box-shadow: .5rem .2rem 1rem black;
