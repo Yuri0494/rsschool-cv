@@ -25,7 +25,8 @@ body {
 
 
 .photo {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     margin: 0 auto;
 }
 
@@ -206,7 +207,7 @@ section {
     }
 
     .section_header {
-        width: 100%;
+        width: 80%;
         font-size: 3rem;
         text-align: center;
     }
@@ -216,7 +217,7 @@ section {
         margin: 0 auto;
         margin-top: 1rem;
         margin-top: 1rem;
-        width:100%;
+        width:80%;
     }
 
     .footer p {
