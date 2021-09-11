@@ -112,13 +112,14 @@ section {
 }
 
 .footer {
+    width: 91%;
     font-size: 2rem;
     margin-top: .1rem;
     background-color: #4e5363;
     height: 3rem;
     display: flex;
-    justify-content: space-around;
     padding: 3rem;
+    justify-content: space-around;
 }
 
 .footer p {
