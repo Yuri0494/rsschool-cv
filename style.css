@@ -112,7 +112,6 @@ section {
 }
 
 .footer {
-    width: 91%;
     font-size: 2rem;
     margin-top: .1rem;
     background-color: #4e5363;
@@ -125,6 +124,10 @@ section {
 .footer p {
     margin: auto;
     text-align: center;
+}
+
+.footer img {
+    max-width: 10%;
 }
 
 @media (max-width: 640px) {
@@ -221,5 +224,6 @@ section {
         font-size: 1.5rem;
         text-align: center;
     }
+
 
 }
