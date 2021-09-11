@@ -5,6 +5,7 @@ html {
 
 .central__block {
     margin: 0 auto;
+    max-width: 1320px;
     min-width: 300px;
     box-shadow: .5rem .2rem 1rem black;
     margin-bottom: 5rem;
@@ -126,6 +127,11 @@ section {
     html {
         font-family: 'Montserrat', sans-serif;
         font-size: 10px;
+    }
+
+    .central__block {
+        width: 100%;
+        margin: 0 auto;
     }
     
     .content {
