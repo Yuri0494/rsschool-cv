@@ -25,9 +25,8 @@ body {
 
 
 .photo {
-    width: 10rem;
-    height: 14rem;
-    margin: 0 auto;
+    width: 100%;
+    object-fit: cover;
 }
 
 .left_article {
@@ -131,7 +130,7 @@ section {
     max-width: 10%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
 
     html {
         font-family: 'Montserrat', sans-serif;
@@ -149,10 +148,6 @@ section {
         line-height: 3.5rem;
     }
 
-    .photo {
-        width: 100%;
-        height: 100%;
-    }
 
     .left_article {
         margin: 0 auto;
@@ -163,6 +158,11 @@ section {
         width: 80%;
         background-color: #4e5363;
         text-align: center;
+    }
+
+    .photo {
+        width: 100%;
+        object-fit: cover;
     }
 
     .left_article h1 {
