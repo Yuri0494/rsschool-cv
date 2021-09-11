@@ -25,7 +25,8 @@ body {
 
 
 .photo {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     object-fit: cover;
 }
 
@@ -130,7 +131,7 @@ section {
     max-width: 10%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 
     html {
         font-family: 'Montserrat', sans-serif;
@@ -161,7 +162,7 @@ section {
     }
 
     .photo {
-        width: 100%;
+        width: 80%;
         object-fit: cover;
     }
 
