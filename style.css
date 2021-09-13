@@ -125,7 +125,8 @@ pre {
     height: 3rem;
     display: flex;
     padding: 3rem;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer p {
@@ -134,7 +135,12 @@ pre {
 }
 
 .footer img {
-    max-width: 10%;
+    max-width: 100%;
+}
+
+.footer a {
+    width: 4rem;
+    display: inline;
 }
 
 @media (max-width: 640px) {
