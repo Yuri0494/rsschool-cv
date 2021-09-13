@@ -99,20 +99,20 @@
                         </p>
                         <pre>
                                 <code>                        
-                                    function decToBin(d) {
-                                    let res = [];
-                                        if(d === 0) {
-                                            return "0"
-                                        }
+        function decToBin(d) {
+            let res = [];
+                if(d === 0) {
+                     return "0"
+                }
 
-                                        while(d > 0) {
-                                            res.push(Math.ceil(d%2));
-                                            d=Math.floor(d / 2);
-                                        }
+                while(d > 0) {
+                    res.push(Math.ceil(d%2));
+                    d=Math.floor(d / 2);
+                }
 
-                                    return res.reverse().join("");
-
-                                    }
+                return res.reverse().join("");
+                
+                }
                                 </code>   
                         </pre>
                     </section>
