@@ -5,18 +5,21 @@
             <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="reset.css">
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+            <!-- and it's easy to individually load additional languages -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/go.min.js"></script>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>My CV</title>
     </head>
     <body>
-
         <div class="central__block">
-
-            <content class="content">
+            <div class="content">
                 <article class="left_article">
-                    <img src="./l2ViNxd000c.jpg" class="photo" alt="">
+                    
                     <section>
-                        <h1>Bagaev <br>Yuri</h1>
+                        <img src="./l2ViNxd000c.jpg" class="photo" alt="">
+                        <h2>Bagaev <br>Yuri</h2>
                         <p class="position">Junior Web Developer</p>
                     </section>
                     <section class="about">
@@ -25,6 +28,7 @@
                         <br>I worked(and work) in many other places, but sure, that my vocation is programming. Now I'm working in company whose name is <a href="https://www.divan.ru/">Divan.ru</a>
                         In free time i'm study HTML, CSS and JavaScript. I will be happy to present you my works and achivments</p> 
                     </section>
+
                     <section>
                         <h3>Skills & abilities</h3>
                         <span>My skills in development:</span>
@@ -34,9 +38,10 @@
                             <li>- JavaScript</li>
                             <li>- React JS</li>
                             <li>- Git</li>
-                            <p></p>
                         </ul>
+                        <p></p>
                     </section>
+
                     <section>
                         <h3>Contact information</h3>
                         <ul>
@@ -45,8 +50,11 @@
                             <li>Adress: Poliny Osipenko street, Vladimir city, Russia</li>
                         </ul>
                     </section>
+
                 </article>
+
                 <article class="right_article">
+                    <h2 class="article_header">a</h2>
                     <section>
                         <h2 class="section_header">Education</h2>
                         <h4 class="section_second_header">First education</h4>
@@ -59,6 +67,7 @@
                         </p>
                         <a href="https://app.rs.school/certificate/r5g1rfwb">Certificate of comlition</a>
                     </section>
+
                     <section>
                         <h2 class="section_header">Expirience in IT</h2>
                         <h4 class="section_second_header">What can i do?</h4>
@@ -66,51 +75,57 @@
                             I like programming. In future i will be complet more projects and projects.
                         </p>
                     </section>
+
                     <section>
                         <h2 class="section_header">My english level</h2>
                         <p class="section_text">My english skill is a A2. This is a not big skill, but i study english every day.</p>
                     </section>
+
                     <section>
                         <h2 class="section_header">My projects</h2>
                         <div class="myProjects">
-                        <h4><a class="section_text" href="https://rolling-scopes-school.github.io/yuri0494-JSFEPRESCHOOL/whack-a-mole/">Whack-a-mole!</a></h4>
-                        <img class="section_img" src="./Whack-a-mole!.JPG" alt="">
-                        <h4><a class="section_text" href="https://rolling-scopes-school.github.io/yuri0494-JSFEPRESCHOOL/JS%20Drum%20Kit/">Drum kit!</a></h4>
-                        <img class="section_img" src="./Drum Kit!.JPG" alt="">
-                        <h4><a class="section_text" href="https://rolling-scopes-school.github.io/yuri0494-JSFEPRESCHOOL/museum/">Museum</a></h4>
-                        <img class="section_img" src="./museum.JPG" alt="">
+                        <h4><a class="section_text" href="https://rolling-scopes-school.github.io/yuri0494-JSFEPRESCHOOL/whack-a-mole/">Whack-a-mole! <img class="section_img" src="./Whack-a-mole!.JPG" alt=""></a></h4>
+                        <h4><a class="section_text" href="https://rolling-scopes-school.github.io/yuri0494-JSFEPRESCHOOL/JS%20Drum%20Kit/">Drum kit!<img class="section_img" src="./DrumKit!.JPG" alt=""></a></h4>
+                        <h4><a class="section_text" href="https://rolling-scopes-school.github.io/yuri0494-JSFEPRESCHOOL/museum/">Museum<img class="section_img" src="./museum.JPG" alt=""></a></h4>
+                        <h4><a class="section_text" href="https://rolling-scopes-school.github.io/yuri0494-JSFEPRESCHOOL/museum/">ITunes Shop (React) <img class="section_img" src="./ITunes.PNG" alt=""></a></h4>
                         </div>
                     </section>
+
                     <section>
                         <h2 class="section_header">Example of my code</h2>
                         <h4 class="section_second_header">Decode from decimal to binary</h4>
-                        <p class="section_text">This function takes decimal number and return binary number.
+                        <p class="section_text">This function takes decimal number and return binary number
                             Get use it! :)
-                            <pre>
-    function decToBin(d) {
-    let res = [];
-        if(d === 0) {
-            return "0"
-        }
-
-        while(d > 0) {
-            res.push(Math.ceil(d%2));
-            d=Math.floor(d / 2);
-        }
-
-    return res.reverse().join("");
-    
-    }
-                            </pre>
                         </p>
+                        <pre>
+                                <code>                        
+                                    function decToBin(d) {
+                                    let res = [];
+                                        if(d === 0) {
+                                            return "0"
+                                        }
+
+                                        while(d > 0) {
+                                            res.push(Math.ceil(d%2));
+                                            d=Math.floor(d / 2);
+                                        }
+
+                                    return res.reverse().join("");
+
+                                    }
+                                </code>   
+                        </pre>
                     </section>
+
                 </article>
-            </content>
+
+            </div>
             <footer class="footer">
-                    <img src="./kisspng-github-logo-repository-computer-icons-5afa376c51ca94.387166531526347628335.png">
+                    <img src="./kisspng-github-logo-repository-computer-icons-5afa376c51ca94.387166531526347628335.png" alt="">
                     <p>All rights reserved 2021</p>
-                    <img src="./rs_school_js.svg">
+                    <img src="./rs_school_js.svg" alt="">
             </footer>
         </div>
     </body>
-</html>
+    </html>
+    

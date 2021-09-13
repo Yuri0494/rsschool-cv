@@ -47,7 +47,7 @@ body {
 
 }
 
-.left_article h1 {
+.left_article h2 {
     color: #ffedcd;
     letter-spacing: .2rem;
     text-transform: uppercase;
@@ -99,7 +99,8 @@ section {
 }
 
 .section_img {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width:60%;
@@ -171,7 +172,7 @@ pre {
         object-fit: cover;
     }
 
-    .left_article h1 {
+    .left_article h2 {
         font-size: 4rem;
     }
 
@@ -239,5 +240,9 @@ pre {
         text-align: center;
     }
 
+    
+}
 
+.article_header {
+    display: none;
 }
