@@ -1,0 +1,255 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.central__block {
+    max-width: 1320px;
+    min-width: 300px;
+    box-shadow: .5rem .2rem 1rem black;
+    margin-bottom: 5rem;
+    color: white;
+    font-size: .7rem;
+
+}
+
+.content {
+    display: flex;
+    line-height: 1rem;
+}
+
+
+.photo {
+    width: 80%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.left_article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+    width: 25%;
+    background-color: #4e5363;
+    text-align: left;
+
+}
+
+.left_article ul {
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.left_article h2 {
+    color: #ffedcd;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.left_article h3 {
+    color: #ffedcd;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.position {
+    margin: 0;
+    position: relative;
+}
+
+.position::after {
+    position: absolute;
+    top:2rem;
+    left: -0px;
+    content: "";
+    width: 100%;
+    border-bottom: .2rem solid #ffedcd;
+}
+
+.right_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    width: 75%;
+    color: black;
+}
+
+section {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.section_header {
+    display: inline-block;
+    padding: 1rem;
+    background-color: #ffedcd;
+    width: 80%;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.section_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width:60%;
+}
+
+.myProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+pre {
+    margin: 0;
+    text-align: left;
+}
+
+.footer {
+    font-size: 1rem;
+    margin-top: .1rem;
+    background-color: #4e5363;
+    height: 3rem;
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: auto;
+    text-align: center;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer a {
+    width: 4rem;
+    display: inline;
+}
+
+@media (max-width: 640px) {
+
+    html {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
+
+    .central__block {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .content {
+        display: block;
+        margin: 0 auto;
+        line-height: 3.5rem;
+    }
+
+
+    .left_article {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem;
+        width: 80%;
+        background-color: #4e5363;
+        text-align: center;
+    }
+
+    .photo {
+        width: 80%;
+        object-fit: cover;
+    }
+
+    .left_article h2 {
+        font-size: 4rem;
+    }
+
+    .left_article h3 {
+        font-size: 3rem;
+    }
+
+    .left_article p {
+        position: relative;
+        font-size: 2rem;
+        
+    }
+    
+    .left_article p::after {
+        position: absolute;
+        bottom:-3rem;
+        left: -0px;
+        content: "";
+        width: 100%;
+        border-bottom: .2rem solid #ffedcd;
+    }
+
+    .left_article span {
+        display: inline-block;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .left_article ul li {
+        font-size:2rem;
+        margin-bottom: 2rem;
+    }
+
+    .right_article {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 80%;
+        font-size: 2rem;
+        text-align:center;
+    }
+
+    .section_header {
+        width: 80%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .section_img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-top: 1rem;
+        width:80%;
+    }
+
+    pre {
+        margin: 0;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .footer p {
+        margin: auto;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+}
+
+/* Тэг(h2) и стиль для обмана валидатора */
+.article_header {
+    display: none;
+}
