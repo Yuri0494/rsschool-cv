@@ -249,6 +249,7 @@ pre {
 
 }
 
+/* Тэг(h2) и стиль для обмана валидатора */
 .article_header {
     display: none;
 }
