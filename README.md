@@ -1,0 +1,1 @@
+https://yuri0494.github.io/rsschool-cv/index.html
