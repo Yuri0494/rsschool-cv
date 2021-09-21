@@ -9,6 +9,9 @@ body {
     justify-content: center;
 }
 
+.button__toHeader {
+    display: none;
+}
 .central__block {
     max-width: 1320px;
     min-width: 300px;
