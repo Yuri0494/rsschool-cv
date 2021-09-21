@@ -220,7 +220,7 @@ pre {
         align-items: center;
         width: 30%;
         justify-content: center;
-        z-index: 3;
+        z-index: 1;
         height: 2rem;
         background-color: #ffedcd;
         text-decoration: none;
