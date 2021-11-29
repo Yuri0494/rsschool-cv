@@ -3,15 +3,18 @@ console.log("1.Верстка валидная +10; \n2.Вёрстка сема�
 const menuButton = document.querySelector(".burger__button");
 const menu = document.querySelector(".navigation");
 const buttonToHeader = document.querySelector(".button__toHeader");
+const body = document.querySelector("body");
 
 menuButton.addEventListener("click", (event) => {
     menu.classList.toggle("active");
     menuButton.classList.toggle("active");
+    body.classList.toggle("body__active");
 })
 
 menu.addEventListener("click", (event) => {
     menu.classList.toggle("active");
     menuButton.classList.toggle("active");
+    body.classList.toggle("body__active");
 })
 
 window.addEventListener("scroll", (event) => {
