@@ -189,7 +189,7 @@ pre {
         position: absolute;
         opacity: 0;
         width: 100%;
-        height: calc(110vh);
+        height: 100%;
         background-color: #4e5363;
         font-size: 2rem;
         z-index: 2;
@@ -203,6 +203,11 @@ pre {
         opacity: 1;
         position: fixed;
     }
+
+    .body__active {
+        overflow:hidden;
+    }
+    
 
     .navigation a {
         color: #ffedcd;
