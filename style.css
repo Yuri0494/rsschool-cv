@@ -1,6 +1,7 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    scroll-behavior:smooth
 }
 
 body {
@@ -8,14 +9,22 @@ body {
     justify-content: center;
 }
 
+.button__toHeader {
+    display: none;
+}
 .central__block {
     max-width: 1320px;
     min-width: 300px;
     box-shadow: .5rem .2rem 1rem black;
     margin-bottom: 5rem;
+    margin-top: .1rem;
     color: white;
     font-size: .7rem;
 
+}
+
+.header {
+    display: none;
 }
 
 .content {
@@ -151,8 +160,137 @@ pre {
     }
 
     .central__block {
+        position: relative;
         width: 100%;
         margin: 0 auto;
+    }
+
+    .header {
+        display: flex;
+        height: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        padding: 3rem;
+        background-color: #4e5363;
+        margin-bottom: .1rem;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffedcd;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        
+    }
+
+    .logo {
+        width: 80%;
+    }
+    
+    .navigation {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        background-color: #4e5363;
+        font-size: 2rem;
+        z-index: 2;
+        top: -150vh;
+        transition: all 1.5s ease;
+    }
+
+    .active {
+        display: block;
+        height: 100%;
+        top:0;
+        opacity: 1;
+        position: fixed;
+    }
+
+    .body__active {
+        overflow:hidden;
+    }
+    
+
+    .navigation a {
+        color: #ffedcd;
+        text-decoration: none;
+    }
+
+    .button__toHeader {
+        display: none;
+    }
+
+    .button__toHeader.active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        justify-content: center;
+        z-index: 1;
+        height: 2rem;
+        background-color: #ffedcd;
+        text-decoration: none;
+    }
+
+    .button__toHeader a {
+        display: block;
+        color: black;
+    }
+    .burger__button {
+        display: block;
+        position: relative;
+        margin-right: 20px;
+        cursor: pointer;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+    }
+
+    .burger__button:before,
+	.burger__button:after {
+        content: "";
+        background-color: #ffedcd;
+        width: 100%;
+        color: #ffedcd;
+        height: 4px;
+        left: 0;
+        position: absolute;
+        transition: transform 0.3s ease-out 0s;
+    }
+
+    .burger__button:before {
+		top:0;
+	}
+	.burger__button:after {
+		bottom: 0;
+	}
+
+	.burger__button span {
+		position: absolute;
+		background-color: #ffedcd;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		top:13.4px;
+		transition: transform 0.3s ease-out 0s;
+	}
+     /* Превращение в крестик при нажатии */
+    .burger__button.active:before {
+		transform: rotate(45deg);
+		top: 13px;
+	}
+
+	.burger__button.active:after {
+		transform: rotate(-45deg);
+		bottom: 13px;
+	}
+
+	.burger__button.active span {
+		transform: scale(0);
+	}
+
+    .header li {
+        margin: 3rem;
+        text-align: center;
     }
     
     .content {

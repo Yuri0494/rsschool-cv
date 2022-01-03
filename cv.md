@@ -8,7 +8,7 @@
 
 ### About me: ###
 
-My main purpose  - to became a  frontend - developer and benefit society :) I worked(and work) in many other places, but sure, that **my vocation is programming.**
+My main purpose  - to becam a  frontend - developer and benefit society :) I worked(and work) in many other places, but sure, that **my vocation is programming.**
 I am a diligent and hardworking. 
 
 
